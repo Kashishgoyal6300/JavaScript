@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: orange;
+}
+#form {
+    width: 500px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Adds spacing between form controls */
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+}
+#form #btn {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#form #btn:hover {
+    background-color: darkorange;
+}
+.form-control .error span {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red; 
+}
